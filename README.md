@@ -24,81 +24,64 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ![Screenshot 2024-02-11 at 00-25-28 Frontend Mentor QR code component](https://github.com/aclf12/qr-code_challenge/assets/43484517/8018f4ea-cded-41db-b4af-3674afcd1607)
 ![Captura de tela 2024-02-11 - 00 24 12](https://github.com/aclf12/qr-code_challenge/assets/43484517/ccbfdef3-d6b1-4cbb-b37f-43317378d2b9)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/aclf12/qr-code_challenge.git]
+- Live Site URL: [https://aclf12.github.io/qr-code_challenge/]
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- Border - box
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+As expected from a beginner, you may notice some difficulties in building this website. It's literally the first time I've made a website on my own. However, as a good student, I studied some ways to solve my little problem, thus helping my learning. The biggest difficulty I had was in relation to CSS, where I'm still seeing the issue of fixed sizes, etc.
 
-To see how you can add code snippets, see below:
+The first point was the use of the “main” tag. When I researched it, I saw that it is well used due to the semantics of main. Unlike the div, it responds to the browser by showing the main part of the website.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<main class="principal">
+     <img src="images/image-qr-code.png"/>
+     <h1>Improve your front-end skills by building projects</h1>
+     <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+</main>
 ```
+The biggest difficulty I had with CSS was the issue of margins conflicting with "width" and "height". With some research, I discovered that when we use these two to determine content size, we use either "margin-inline" or "margin-right" / "margin-left", both in "auto".
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.principal{
+    width: 300px;
+    height: 470px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 15px;
+    margin-bottom: 10%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
+    
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+In this project I did not use anything about JavaScript. However, I intend to start using it in the future. This may be the most difficult part of learning, since we are talking about Programming Language.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [DevMedia]([https://www.example.com](https://www.devmedia.com.br/css-text-shadow-e-box-shadow/36826)) - Helped me with the "box-shadow" issue
+- [Figma](https://www.figma.com/) - Helped with designing the layout
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- GitHub - [Ana Carolina](https://github.com/aclf12)
+- Frontend Mentor - [@aclf12](https://www.frontendmentor.io/profile/aclf12)
+- Instagram - [@aclf12](https://www.instagram.com/aclf12/)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I want to thank everyone who stopped to give advice on the subject, as well as those who were willing to help me.
